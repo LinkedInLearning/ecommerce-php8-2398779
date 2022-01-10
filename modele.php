@@ -9,26 +9,7 @@
 
         return basename($file['file']['name']);
     }
-    function get_products_by_category($id) {
-        $connexion = db();
-        $query = "SELECT * FROM product WHERE category=" . $id;
-	    $stmt = $connexion->prepare($query);
-	    $stmt->execute();		
-        
-        $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-	    return $products; 
-    }
-    function get_products_by_id($id) {
-        $connexion = db();
-        $query = "SELECT * FROM product WHERE id=" . $id;
-	    $stmt = $connexion->prepare($query);
-	    $stmt->execute();		
-        
-        $products = $stmt->fetch(PDO::FETCH_ASSOC);
-
-	    return $products; 
-    }
     function get_products() {
         $connexion = db();
         $query = "SELECT * FROM product";

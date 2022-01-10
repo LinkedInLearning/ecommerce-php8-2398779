@@ -1,19 +1,16 @@
 <?php
 function index()
 {
-    $products = get_products();
     require_once 'front/index.php';
 }
 
-function products($id)
+function products()
 {
-    $products = get_products_by_category($id);
     require_once 'front/products.php';
 }
 
 function product($id)
 {
-    $product = get_products_by_id($id);
     require_once 'front/product.php';
 }
 
@@ -24,15 +21,7 @@ function login()
 
 function register()
 {
-    if (!empty($_POST)) {
-        $data = $_POST;
-        $data['admin'] = 0;
-        set_user($data);
-        header('Location: /index.php');      
-        exit();  
-    } else {
-        require_once 'front/register.php';
-    }
+    require_once 'front/register.php';
 }
 
 function panier()
@@ -166,42 +155,5 @@ function admin_user_import() {
         exit();
     }
     require_once 'admin/import.php';
-}
-function add_panier($id) {
-    $product = get_products_by_id($id);
-    if (!empty($product)) {
-        if (!isset($_SESSION['cart']) || (empty($_SESSION['cart']))) {
-            $_SESSION['cart'] = [];
-            $_SESSION['cart'][$id]['quantity'] = 1;
-            $_SESSION['cart'][$id]['name'] = $product['name'];
-        } else {
-            if (isset($_SESSION['cart'][$id])) {
-                $_SESSION['cart'][$id]['quantity'] = $_SESSION['cart'][$id]['quantity']  + 1;
-            } else {
-                $_SESSION['cart'][$id]['quantity'] = 1;
-                $_SESSION['cart'][$id]['name'] = $product['name'];
-            }
-        }
-    }
-    header('Location: /index.php/panier');     
-    exit();
-}
-function del_panier($id) {
-    if (!empty($_SESSION['cart'][$id])) {
-        $_SESSION['cart'][$id]['quantity'] = 0;
-    }
-    header('Location: /index.php/panier');     
-    exit();
-}
-function pay() {
-    if(!empty($_GET['paymentID']) && !empty($_GET['token']) && !empty($_GET['payerID']) && !empty($_GET['pid']) ){ 
-        // sauvegarde des informations et validation du paiement
-        header("Location: /index.php/thanks"); 
-    }else{ 
-        header("Location: /index.php"); 
-    } 
-}
-function thanks() {
-    require_once 'front/thanks.php';
 }
 ?>

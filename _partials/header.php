@@ -16,8 +16,6 @@
 
     <!-- Custom styles for this template -->
     <link href="./assets/css/custom.css" rel="stylesheet">
-
-    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 </head>
 
 <body>
@@ -39,9 +37,9 @@
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Catégories</h4>
                     <ul class="list-unstyled">
-                        <?php foreach ($header_categories as $hc) { ?>
-                            <li><a href="index.php/products?id=<?= $hc['id']; ?>" class="text-white"><?= $hc['name']; ?></a></li>
-                        <?php } ?>
+                        <li><a href="index.php/products" class="text-white">Cat 1</a></li>
+                        <li><a href="index.php/products" class="text-white">Cat 2</a></li>
+                        <li><a href="index.php/products" class="text-white">Cat 3</a></li>
                     </ul>
                 </div>
             </div>

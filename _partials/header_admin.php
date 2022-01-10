@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Admin</h4>
-                    <?php if (isset($_SESSION['logged'])) { echo "<p>" . $_SESSION['email'] . "</p>"; } ?>
+                    <?php if ($_SESSION['logged']) { echo "<p>" . $_SESSION['email'] . "</p>"; } ?>
                     <ul class="list-unstyled">
                         <li><a href="index.php/admin/products" class="text-white">Produits</a></li>
                         <li><a href="index.php/admin/users" class="text-white">Utilisateurs</a></li>

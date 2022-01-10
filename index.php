@@ -10,7 +10,6 @@ $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 if (strpos($uri, "admin") !== false) {
     include_once "_partials/header_admin.php";
 } else {
-    $header_categories = get_categories();
     include_once "_partials/header.php";
 }
 
@@ -21,9 +20,9 @@ if ('/index.php' == $uri)
 {
     echo index();
 }
-elseif ('/index.php/products' == $uri && isset($_GET['id']))
+elseif ('/index.php/products' == $uri)
 {
-    echo products($_GET['id']);
+    echo products();
 }
 elseif ('/index.php/product' == $uri && isset($_GET['id']))
 {
@@ -48,14 +47,6 @@ elseif ('/index.php/logout' == $uri)
 elseif ('/index.php/panier' == $uri)
 {
     echo panier();
-}
-elseif ('/index.php/pay' == $uri)
-{
-    echo pay();
-}
-elseif ('/index.php/thanks' == $uri)
-{
-    echo thanks();
 }
 elseif ('/index.php/register' == $uri)
 {
@@ -116,14 +107,6 @@ elseif ('/index.php/admin/user/import' == $uri)
 elseif ('/index.php/admin/users' == $uri)
 {
     echo admin_users();
-}
-elseif ('/index.php/panier/add' == $uri && isset($_GET['id']))
-{
-    echo add_panier($_GET['id']);
-}
-elseif ('/index.php/panier/del' == $uri && isset($_GET['id']))
-{
-    echo del_panier($_GET['id']);
 }
 else
 {
