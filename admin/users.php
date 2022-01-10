@@ -5,7 +5,6 @@
             <div class="col-lg-12">
                 <h1>Utilisateurs</h1>
                 <a href="index.php/admin/user/add" class="btn btn-primary text-white">Ajouter</a>
-                <a href="index.php/admin/user/import" class="btn btn-primary text-white">Import</a>
                 <table class="table">
                     <thead>
                     <tr>

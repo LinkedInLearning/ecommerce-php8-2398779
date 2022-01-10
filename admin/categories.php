@@ -5,7 +5,6 @@
             <div class="col-lg-12">
                 <h1>Catégories</h1>
                 <a class="btn btn-primary text-white" href="/index.php/admin/category/add">Ajouter</a>
-                <a class="btn btn-primary text-white" href="/index.php/admin/categories/import">Import</a>
                 <table class="table">
                     <thead>
                     <tr>

@@ -118,42 +118,4 @@ function try_login() {
         require_once 'front/error.php';
     }
 }
-function admin_categories_import() {
-    if (!empty($_FILES)) {
-        $file = $_FILES['file']['tmp_name'];
-        $handle = fopen($file, "r");
-        $i = 0;
-        while (($data = fgetcsv($handle)) !== FALSE) {
-            if ($i > 0) {
-                set_category(['name' => $data[0]]);
-            }
-            $i++;
-        }
-        header('Location: /index.php/admin');     
-        exit();
-    }
-    require_once 'admin/import.php';
-}
-function admin_user_import() {
-    if (!empty($_FILES)) {
-        $file = $_FILES['file']['tmp_name'];
-        $handle = fopen($file, "r");
-        $i = 0;
-        while (($data = fgetcsv($handle)) !== FALSE) {
-            if ($i > 0) {
-                set_user(
-                    [
-                        'email' => $data[0],
-                        'password' => $data[1],
-                        'admin' => $data[2]
-                    ]
-                );
-            }
-            $i++;
-        }
-        header('Location: /index.php/admin');     
-        exit();
-    }
-    require_once 'admin/import.php';
-}
 ?>

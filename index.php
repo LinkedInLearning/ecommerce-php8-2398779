@@ -79,10 +79,6 @@ elseif ('/index.php/admin/category/del' == $uri)
 {
     echo admin_category_del($_GET['id']);
 }
-elseif ('/index.php/admin/categories/import' == $uri)
-{
-    echo admin_categories_import();
-}
 elseif ('/index.php/admin/product/del' == $uri)
 {
     echo admin_remove_product($_GET['id']);
@@ -98,10 +94,6 @@ elseif ('/index.php/admin/user/del' == $uri)
 elseif ('/index.php/admin/user/add' == $uri)
 {
     echo admin_user_add();
-}
-elseif ('/index.php/admin/user/import' == $uri)
-{
-    echo admin_user_import();
 }
 elseif ('/index.php/admin/users' == $uri)
 {
