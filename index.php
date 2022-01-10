@@ -56,10 +56,6 @@ elseif ('/index.php/admin/products' == $uri)
 {
     echo admin_products();
 }
-elseif ('/index.php/admin/product/add' == $uri)
-{
-    echo admin_product_add();
-}
 elseif ('/index.php/admin/users' == $uri)
 {
     echo admin_users();

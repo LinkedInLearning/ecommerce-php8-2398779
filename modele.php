@@ -19,9 +19,4 @@
             ]
         ];
     }
-
-    function set_product($data) {
-        var_dump($data);
-        die();
-    }
 ?>

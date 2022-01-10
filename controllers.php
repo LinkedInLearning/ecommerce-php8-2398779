@@ -50,17 +50,6 @@ function admin_products()
     require_once 'admin/products.php';
 }
 
-function admin_product_add()
-{
-    if (!empty($_POST)) {
-        set_product($_POST);
-        header('Location: /index.php/admin/products');      
-        exit();  
-    } else {
-        require_once 'admin/product_add.php';
-    }
-}
-
 function admin_users()
 {
     require_once 'admin/users.php';
