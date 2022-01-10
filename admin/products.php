@@ -14,10 +14,10 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($products as $p) { ?>
+                    <?php for ($i=0; $i<2; $i++) { ?>
                         <tr>
-                            <th scope="row"><?= $p['id'] ?></th>
-                            <td><?= $p['name'] ?></td>
+                            <th scope="row"><?= $i ?></th>
+                            <td>Nunc ut purus finibus, molestie lorem mattis, viverra nunc.</td>
                             <td>
                                 <a class="btn btn-danger text-white">Supprimer</a>
                                 <a class="btn btn-primary text-white">Modifier</a>

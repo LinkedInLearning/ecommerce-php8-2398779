@@ -46,7 +46,6 @@ function admin_categories()
 
 function admin_products()
 {
-    $products = get_products();
     require_once 'admin/products.php';
 }
 
