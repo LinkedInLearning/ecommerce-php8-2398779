@@ -30,7 +30,6 @@
                         <li><a href="index.php/panier" class="text-white">Panier</a></li>
                         <li><a href="index.php/register" class="text-white">Créer un compte</a></li>
                         <li><a href="index.php/login" class="text-white">Connexion</a></li>
-                        <li><a href="index.php/logout" class="text-white">Déconnexion</a></li>
                         <li><a href="index.php/admin/index" class="text-white">Admin</a></li>
                     </ul>
                 </div>

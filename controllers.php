@@ -102,20 +102,4 @@ function admin_user_add() {
         require_once 'admin/user_add.php';
     }
 }
-function try_login() {
-    $user = find_user_by_email_and_password($_POST);
-    if (!empty($user)) {
-        $_SESSION["logged"] = true;
-        $_SESSION["id"] = $user['id'];
-        $_SESSION["email"] = $user['email'];  
-        if ($user['admin'] == 1) {
-            header('Location: /index.php/admin');      
-        } else {
-            header('Location: /index.php');      
-        }
-        exit();  
-    } else {
-        require_once 'front/error.php';
-    }
-}
 ?>

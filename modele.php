@@ -96,18 +96,4 @@
         $stmt = $connexion->prepare($query);
         $stmt->execute();
     }
-    function find_user_by_email_and_password($data){
-        $connexion = db();
-        $query = "SELECT * FROM user WHERE email='" . $data['email'] ."'";
-	    $stmt = $connexion->prepare($query);
-	    $stmt->execute();		
-        
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if (!empty($user) && ($user['password'] == md5($data['password']))) {
-            return $user;
-        } else {
-            return null;
-        }
-    }
 ?>

@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <?php include_once "modele.php" ?>
 <?php include_once "controllers.php"; ?>
 
@@ -29,19 +28,7 @@ elseif ('/index.php/product' == $uri && isset($_GET['id']))
 }
 elseif ('/index.php/login' == $uri)
 {
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        echo try_login();
-    } else {
-        echo login();
-    }
-}
-elseif ('/index.php/logout' == $uri)
-{
-    $_SESSION["logged"] = false;
-    $_SESSION["id"] = null;
-    $_SESSION["email"] = null;  
-    header('Location: /index.php');
-    exit();   
+    echo login();
 }
 elseif ('/index.php/panier' == $uri)
 {
