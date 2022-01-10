@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Administrateurs</h1>
-                <a href="index.php/admin/user/add" class="btn btn-primary text-white">Ajouter</a>
+                <a class="btn btn-primary text-white">Ajouter</a>
                 <table class="table">
                     <thead>
                     <tr>
@@ -14,12 +14,13 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($users as $u) { ?>
+                    <?php for ($i=0; $i<2; $i++) { ?>
                         <tr>
-                            <th scope="row"><?= $u['id'] ?></th>
-                            <td><?= $u['email'] ?></td>
+                            <th scope="row"><?= $i ?>/th>
+                            <td>login@test.fr</td>
                             <td>
-                                <a class="btn btn-danger text-white" href="/index.php/admin/admin/del?id=<?= $u['id'] ?>">Supprimer</a>
+                                <a class="btn btn-danger text-white">Supprimer</a>
+                                <a class="btn btn-primary text-white">Modifier</a>
                             </td>
                         </tr>
                     <?php } ?>

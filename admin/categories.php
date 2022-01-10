@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Catégories</h1>
-                <a class="btn btn-primary text-white" href="/index.php/admin/category/add">Ajouter</a>
+                <a class="btn btn-primary text-white">Ajouter</a>
                 <table class="table">
                     <thead>
                     <tr>
@@ -14,12 +14,13 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($categories as $c) { ?>
+                    <?php for ($i=0; $i<2; $i++) { ?>
                         <tr>
-                            <th scope="row"><?= $c['id'] ?></th>
-                            <td><?= $c['name'] ?></td>
+                            <th scope="row"><?= $i ?></th>
+                            <td>Nunc ut purus finibus</td>
                             <td>
-                                <a href="/index.php/admin/category/del?id=<?= $c['id'] ?>" class="btn btn-danger text-white">Supprimer</a>
+                                <a class="btn btn-danger text-white">Supprimer</a>
+                                <a class="btn btn-primary text-white">Modifier</a>
                             </td>
                         </tr>
                     <?php } ?>

@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Produits</h1>
-                <a class="btn btn-primary text-white" href="/index.php/admin/products/add">Ajouter</a>
+                <a class="btn btn-primary text-white" href="index.php/admin/product/add">Ajouter</a>
                 <table class="table">
                     <thead>
                     <tr>
@@ -17,9 +17,10 @@
                     <?php foreach ($products as $p) { ?>
                         <tr>
                             <th scope="row"><?= $p['id'] ?></th>
-                            <td><?= $p['price'] ?></td>
+                            <td><?= $p['name'] ?></td>
                             <td>
-                                <a href="/index.php/admin/product/del?id=<?= $p['id'] ?>" class="btn btn-danger text-white">Supprimer</a>
+                                <a class="btn btn-danger text-white">Supprimer</a>
+                                <a class="btn btn-primary text-white">Modifier</a>
                             </td>
                         </tr>
                     <?php } ?>
