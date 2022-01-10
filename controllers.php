@@ -60,7 +60,7 @@ function admin_users()
 function admin_product_add() 
 {
     if (!empty($_POST)) {
-        set_product($_POST);
+        set_product($_POST, $_FILES);
         header('Location: /index.php/admin/products');      
         exit();  
     } else {

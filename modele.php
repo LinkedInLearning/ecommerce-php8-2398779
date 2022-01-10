@@ -1,6 +1,15 @@
 <?php
     include_once "config.php";
 
+    function upload_file($file) {
+        $uploadDir = __DIR__ . '/uploads/';
+        $uploadFilename = $uploadDir . basename($file['file']['name']);
+        
+        move_uploaded_file($_FILES['file']['tmp_name'], $uploadFilename);
+
+        return basename($file['file']['name']);
+    }
+
     function get_products() {
         $connexion = db();
         $query = "SELECT * FROM product";
@@ -11,15 +20,18 @@
 
 	    return $products; 
     }
-    function set_product($data) {
+    function set_product($data, $files) {
         $connexion = db();
-        $query = "INSERT INTO product SET name=:name, description=:description, price=:price, category=:category";
+        $query = "INSERT INTO product SET name=:name, description=:description, price=:price, category=:category, filename=:filename";
 
         $stmt = $connexion->prepare($query);
         $stmt->bindParam(":name", $data['name']);
         $stmt->bindParam(":description", $data['description']);
         $stmt->bindParam(":price", $data['price']);
         $stmt->bindParam(":category", $data['category']);
+
+        $filename = upload_file($files);
+        $stmt->bindParam(":filename", $filename);
         
         $stmt->execute();
     }

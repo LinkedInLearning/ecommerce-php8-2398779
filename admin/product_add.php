@@ -4,18 +4,22 @@
         <div class="row">
             <h1>Ajouter un produit</h1>
             <div class="col-lg-12">
-                <form method="POST" name="product" action="">
+                <form method="POST" name="product" action="" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="name">nom</label>
-                        <input type="name" class="form-control" name="name">
+                        <input type="text" class="form-control" name="name">
                     </div>
                     <div class="form-group">
                         <label for="description">description</label>
-                        <input type="description" class="form-control" name="description">
+                        <input type="textarea" class="form-control" name="description">
                     </div>
                     <div class="form-group">
                         <label for="price">prix</label>
                         <input type="number" class="form-control" name="price">
+                    </div>
+                    <div class="form-group">
+                        <label for="file">Fichier</label>
+                        <input type="file" class="form-control" name="file">
                     </div>
                     <div class="form-group">
                         <label for="category">categories</label>
