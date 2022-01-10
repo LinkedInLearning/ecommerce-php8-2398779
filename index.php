@@ -1,7 +1,6 @@
 <?php session_start(); ?>
 <?php include_once "modele.php" ?>
 <?php include_once "controllers.php"; ?>
-<?php include_once "paypal.php"; ?>
 
 <?php
 
