@@ -2,17 +2,17 @@
     <div class="container">
 
         <div class="row">
-            <?php foreach ($products as $p) { ?>
+            <?php for ($i=0; $i<9; $i++) { ?>
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="./uploads/<?= $p['filename']; ?>">
+                        <img class="card-img-top" src="./assets/img/delicate-bottle.webp">
                         <div class="card-body">
-                            <p class="card-text"><?= $p['name']; ?></p>
+                            <p class="card-text">Donec vehicula risus in convallis cursus.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="/index.php/product?id=<?= $p['id']; ?>" class="btn btn-sm btn-outline-secondary">Voir</a>
+                                    <a href="index.php/product?id=1" class="btn btn-sm btn-outline-secondary">Voir</a>
                                 </div>
-                                <small class="text-muted"><?= $p['price']; ?>€</small>
+                                <small class="text-muted">#tag</small>
                             </div>
                         </div>
                     </div>

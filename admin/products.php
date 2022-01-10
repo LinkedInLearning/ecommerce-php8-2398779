@@ -17,7 +17,7 @@
                     <?php foreach ($products as $p) { ?>
                         <tr>
                             <th scope="row"><?= $p['id'] ?></th>
-                            <td><?= $p['name'] ?></td>
+                            <td><?= $p['price'] ?></td>
                             <td>
                                 <a href="/index.php/admin/product/del?id=<?= $p['id'] ?>" class="btn btn-danger text-white">Supprimer</a>
                             </td>
