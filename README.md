@@ -1,6 +1,6 @@
 # Développer un e-commerce en PHP 8
 
-Ce dossier Repository est lié au cours [Développer un e-commerce en PHP 8][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](www.linkedin.com/learning).
+Ce dossier Repository est lié au cours [Développer un e-commerce en PHP 8][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
 
 ![Développer un e-commerce en PHP 8][lil-thumbnail-url] 
 
