@@ -4,7 +4,7 @@ Ce dossier Repository est lié au cours [Développer un e-commerce en PHP 8][lil
 
 ![Développer un e-commerce en PHP 8][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Avec Julian Layen, lancez-vous dans le développement d'un site de e-commerce à l'aide du langage PHP 8. Dans un premier temps, vous installerez les outils indispensables à la création de votre environnement, dont le langage lui-même, ainsi que l'éditeur de code VSC. Puis, vous ferez le tour du projet à créer, des maquettes et de l'architecture de type MVC. Ensuite, vous passerez à la création de la partie administration et, enfin, la partie utilisateur, qui comprend la création de compte, la gestion du panier ainsi que les moyens de paiement. 
 
 ## Instructions
 
