@@ -1,4 +1,4 @@
-# Nom final de la formation
+# Développer un e-commerce en PHP 8
 
 Ce dossier Repository est lié au cours [Développer un e-commerce en PHP 8][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](www.linkedin.com/learning).
 
