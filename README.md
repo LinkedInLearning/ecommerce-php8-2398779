@@ -36,5 +36,5 @@ La branche master correspond au code à la fin de la formation.
 
  Retrouvez [Julian LAYEN](https://www.linkedin.com/learning/instructors/) sur LinkedIn Learning.
 
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
+[lil-course-url]: https://www.linkedin.com/learning/developper-un-e-commerce-en-php-8
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg	
