@@ -37,4 +37,4 @@ La branche master correspond au code à la fin de la formation.
  Retrouvez [Julian LAYEN](https://www.linkedin.com/learning/instructors/julian-layen) sur LinkedIn Learning.
 
 [lil-course-url]: https://www.linkedin.com/learning/developper-un-e-commerce-en-php-8
-[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQGz4gojh4Z-xQ/learning-public-crop_675_1200/0/1645450046640?e=1646125200&v=beta&t=VbBGmKLo1AQJphvpDstUPxXis6Ad47lZXGcgZZhEhpw
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQGz4gojh4Z-xQ/learning-public-crop_675_1200/0/1645450046640?e=1646964000&v=beta&t=b1zJJbbtZXp3aV2dgskfgyxD1PXbxCgHzXWBpzlfS9E
