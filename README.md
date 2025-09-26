@@ -6,6 +6,8 @@ Ce dossier Repository est lié au cours [Développer un e-commerce en PHP 8][lil
 
 Avec Julian Layen, lancez-vous dans le développement d'un site de e-commerce à l'aide du langage PHP 8. Dans un premier temps, vous installerez les outils indispensables à la création de votre environnement, dont le langage lui-même, ainsi que l'éditeur de code VSC. Puis, vous ferez le tour du projet à créer, des maquettes et de l'architecture de type MVC. Ensuite, vous passerez à la création de la partie administration et, enfin, la partie utilisateur, qui comprend la création de compte, la gestion du panier ainsi que les moyens de paiement. 
 
+La meilleure façon d'apprendre un langage est de l'utiliser dans la pratique. C'est pourquoi ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. 
+
 ## Instructions
 
 Ce dossier Repository a des branches pour chacune des vidéos du cours. Vous pouvez utiliser le menu des Branches sur GitHub afin d’accéder aux passages qui vous intéressent. Vous pouvez également rajouter `/tree/BRANCH_NAME` à l’URL afin d’accéder à la branche qui vous intéresse. 
